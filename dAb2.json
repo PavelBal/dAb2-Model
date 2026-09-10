@@ -623,7 +623,1181 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Venous Blood-Whole Blood-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|VenousBlood|dAb2|Whole Blood",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.QWBA.3-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 10,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.QWBA.1-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.QWBA.2-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 9,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.6-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.5-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.4-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.3-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.1-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.2-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            }
+          ],
+          "Name": "Blood - lin scale",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Venous Blood-Whole Blood-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|VenousBlood|dAb2|Whole Blood",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 14
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.QWBA.3-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 23,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.QWBA.1-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 21,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.QWBA.2-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 22,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.6-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 20,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.5-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 19,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.4-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 18,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.3-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 17,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.1-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 15,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Blood.LSC.2-dAb2-Blood-WholeBlood-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF0000",
+                "LegendIndex": 16,
+                "LineStyle": "None",
+                "Symbol": "Triangle"
+              }
+            }
+          ],
+          "Name": "Blood - log scale",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Lung-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Lung|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 7
+              }
+            },
+            {
+              "Name": "Sepp2015.Lung.QWBA.1-dAb2-Lung-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.1|ObservedData|Lung|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Lung.QWBA.3-dAb2-Lung-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.3|ObservedData|Lung|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#0000FF",
+                "LegendIndex": 10,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Lung.QWBA.2-dAb2-Lung-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.2|ObservedData|Lung|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#0000FF",
+                "LegendIndex": 9,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Lung",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Skin-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Skin|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 14
+              }
+            },
+            {
+              "Name": "Sepp2015.Skin.QWBA.3-dAb2-Skin-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.3|ObservedData|Skin|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF00FF",
+                "LegendIndex": 17,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Skin.QWBA.2-dAb2-Skin-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.2|ObservedData|Skin|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF00FF",
+                "LegendIndex": 16,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Skin.QWBA.1-dAb2-Skin-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.1|ObservedData|Skin|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 15,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Skin",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Muscle-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Muscle|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#800080",
+                "LegendIndex": 7
+              }
+            },
+            {
+              "Name": "Sepp2015.Muscle.QWBA.3-dAb2-Muscle-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.3|ObservedData|Muscle|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#800080",
+                "LegendIndex": 10,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Muscle.QWBA.2-dAb2-Muscle-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.2|ObservedData|Muscle|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#800080",
+                "LegendIndex": 9,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Muscle.QWBA.1-dAb2-Muscle-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.1|ObservedData|Muscle|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#800080",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Muscle",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Spleen-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Spleen|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#00FF00",
+                "LegendIndex": 9
+              }
+            },
+            {
+              "Name": "Sepp2015.Spleen.QWBA.3-dAb2-Spleen-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.3|ObservedData|Spleen|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#00FF00",
+                "LegendIndex": 12,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Spleen.QWBA.2-dAb2-Spleen-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.2|ObservedData|Spleen|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#00FF00",
+                "LegendIndex": 11,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Spleen.QWBA.1-dAb2-Spleen-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.1|ObservedData|Spleen|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#00FF00",
+                "LegendIndex": 10,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Spleen",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Liver-Whole Organ incl. FcRn_Complex (Liver)-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Liver|dAb2|Whole Organ incl. FcRn_Complex (Liver)-dAb2",
+              "CurveOptions": {
+                "Color": "#C04000",
+                "LegendIndex": 5
+              }
+            },
+            {
+              "Name": "Sepp2015.Liver.QWBA.3-dAb2-Liver-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.3|ObservedData|Liver|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#C04000",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Liver.QWBA.2-dAb2-Liver-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.2|ObservedData|Liver|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#C04000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Liver.QWBA.1-dAb2-Liver-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.1|ObservedData|Liver|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#C04000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Liver",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Heart-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Heart|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#FF8080",
+                "LegendIndex": 14
+              }
+            },
+            {
+              "Name": "Sepp2015.Heart.QWBA.1-dAb2-Heart-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.1|ObservedData|Heart|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#FF8080",
+                "LegendIndex": 15,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Heart.QWBA.3-dAb2-Heart-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.3|ObservedData|Heart|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF8080",
+                "LegendIndex": 17,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Heart.QWBA.2-dAb2-Heart-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.2|ObservedData|Heart|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF8080",
+                "LegendIndex": 16,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Heart",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Bone-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Bone|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#0000C0",
+                "LegendIndex": 14
+              }
+            },
+            {
+              "Name": "Sepp2015.Bone.QWBA.3-dAb2-Bone-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.3|ObservedData|Bone|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#0000C0",
+                "LegendIndex": 17,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Bone.QWBA.2-dAb2-Bone-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.2|ObservedData|Bone|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#0000C0",
+                "LegendIndex": 16,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Bone.QWBA.1-dAb2-Bone-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.1|ObservedData|Bone|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#0000C0",
+                "LegendIndex": 15,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Bone",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Small Intestine-Whole Organ (Small Intestine) incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|SmallIntestine|dAb2|Whole Organ (Small Intestine) incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#804040",
+                "LegendIndex": 14
+              }
+            },
+            {
+              "Name": "dAb2-Large Intestine-Whole Organ (Large Intestine) incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|LargeIntestine|dAb2|Whole Organ (Large Intestine) incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#808080",
+                "LegendIndex": 15
+              }
+            },
+            {
+              "Name": "Sepp2015.Gut.QWBA.3-dAb2-Gut-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.3|ObservedData|GIT|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#804040",
+                "LegendIndex": 18,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Gut.QWBA.1-dAb2-Gut-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.1|ObservedData|GIT|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#804040",
+                "LegendIndex": 16,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Gut.QWBA.2-dAb2-Gut-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.2|ObservedData|GIT|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#804040",
+                "LegendIndex": 17,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Intestine",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 3.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Brain-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim|Organism|Brain|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Sepp2015.Brain.QWBA.3-dAb2-Brain-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.3|ObservedData|Brain|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Brain.QWBA.2-dAb2-Brain-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.2|ObservedData|Brain|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Brain.QWBA.1-dAb2-Brain-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.1|ObservedData|Brain|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Brain",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
+        }
+      ]
     },
     {
       "Name": "dAb2_Sim_Kidney",
@@ -718,7 +1892,100 @@
           }
         }
       ],
-      "HasResults": false
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "dAb2-Kidney-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
+              "X": "Time",
+              "Y": "dAb2_Sim_Kidney|Organism|Kidney|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Sepp2015.Kidney.QWBA.3-dAb2-Kidney-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.3|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.3|ObservedData|Kidney|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF8000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Kidney.QWBA.2-dAb2-Kidney-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.2|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.2|ObservedData|Kidney|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "VisibleInLegend": false,
+                "Color": "#FF8000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Sepp2015.Kidney.QWBA.1-dAb2-Kidney-Tissue-Measurement",
+              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.1|Time",
+              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.1|ObservedData|Kidney|Tissue|dAb2|Measurement",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Kidney - log scale",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "dAb2\ndAb2_Sim_Kidney\n2023-03-14 12:14"
+        }
+      ]
     }
   ],
   "ObservedData": [
