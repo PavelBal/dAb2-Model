@@ -1,5 +1,6 @@
 {
-  "Version": 79,
+  "Name": "dAb2",
+  "Version": 81,
   "Individuals": [
     {
       "Name": "Mouse",
@@ -312,16 +313,6 @@
             "Source": "Publication",
             "Description": "Sepp2015"
           }
-        },
-        {
-          "Name": "Kd (FcRn) in endosomal space",
-          "Value": 999999.0,
-          "Unit": "µmol/l",
-          "ValueOrigin": {
-            "Id": 26,
-            "Source": "Other",
-            "Description": "no FcRn binding"
-          }
         }
       ]
     }
@@ -335,17 +326,20 @@
         {
           "Name": "Start time",
           "Value": 0.0,
-          "Unit": "h"
+          "Unit": "h",
+          "ValueOrigin": {}
         },
         {
           "Name": "InputDose",
           "Value": 10.0,
-          "Unit": "mg/kg"
+          "Unit": "mg/kg",
+          "ValueOrigin": {}
         },
         {
           "Name": "Infusion time",
           "Value": 0.1,
-          "Unit": "s"
+          "Unit": "s",
+          "ValueOrigin": {}
         }
       ]
     }
@@ -399,7 +393,8 @@
             {
               "Name": "Start time",
               "Value": 0.0,
-              "Unit": "h"
+              "Unit": "h",
+              "ValueOrigin": {}
             },
             {
               "Name": "End time",
@@ -422,9 +417,10 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|10mgkg|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|10mgkg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 0.0016666666667,
-          "Unit": "min"
+          "Unit": "min",
+          "ValueOrigin": {}
         }
       ],
       "OutputSelections": [
@@ -627,1181 +623,7 @@
           }
         }
       ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Venous Blood-Whole Blood-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|VenousBlood|dAb2|Whole Blood",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.QWBA.3-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 10,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.QWBA.1-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.QWBA.2-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 9,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.6-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 7,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.5-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 6,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.4-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 5,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.3-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 4,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.1-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 2,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.2-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 3,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            }
-          ],
-          "Name": "Blood - lin scale",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Venous Blood-Whole Blood-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|VenousBlood|dAb2|Whole Blood",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 14
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.QWBA.3-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 23,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.QWBA.1-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 21,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.QWBA.2-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.QWBA.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 22,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.6-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.6|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 20,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.5-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.5|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 19,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.4-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.4|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 18,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.3-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.3|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 17,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.1-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.1|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 15,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Blood.LSC.2-dAb2-Blood-WholeBlood-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Blood.LSC.2|ObservedData|Blood|WholeBlood|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF0000",
-                "LegendIndex": 16,
-                "LineStyle": "None",
-                "Symbol": "Triangle"
-              }
-            }
-          ],
-          "Name": "Blood - log scale",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Lung-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Lung|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#0000FF",
-                "LegendIndex": 7
-              }
-            },
-            {
-              "Name": "Sepp2015.Lung.QWBA.1-dAb2-Lung-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.1|ObservedData|Lung|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#0000FF",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Lung.QWBA.3-dAb2-Lung-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.3|ObservedData|Lung|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#0000FF",
-                "LegendIndex": 10,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Lung.QWBA.2-dAb2-Lung-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Lung.QWBA.2|ObservedData|Lung|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#0000FF",
-                "LegendIndex": 9,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Lung",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Skin-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Skin|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#FF00FF",
-                "LegendIndex": 14
-              }
-            },
-            {
-              "Name": "Sepp2015.Skin.QWBA.3-dAb2-Skin-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.3|ObservedData|Skin|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF00FF",
-                "LegendIndex": 17,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Skin.QWBA.2-dAb2-Skin-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.2|ObservedData|Skin|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF00FF",
-                "LegendIndex": 16,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Skin.QWBA.1-dAb2-Skin-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Skin.QWBA.1|ObservedData|Skin|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#FF00FF",
-                "LegendIndex": 15,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Skin",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Muscle-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Muscle|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#800080",
-                "LegendIndex": 7
-              }
-            },
-            {
-              "Name": "Sepp2015.Muscle.QWBA.3-dAb2-Muscle-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.3|ObservedData|Muscle|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#800080",
-                "LegendIndex": 10,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Muscle.QWBA.2-dAb2-Muscle-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.2|ObservedData|Muscle|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#800080",
-                "LegendIndex": 9,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Muscle.QWBA.1-dAb2-Muscle-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Muscle.QWBA.1|ObservedData|Muscle|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#800080",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Muscle",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Spleen-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Spleen|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#00FF00",
-                "LegendIndex": 9
-              }
-            },
-            {
-              "Name": "Sepp2015.Spleen.QWBA.3-dAb2-Spleen-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.3|ObservedData|Spleen|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#00FF00",
-                "LegendIndex": 12,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Spleen.QWBA.2-dAb2-Spleen-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.2|ObservedData|Spleen|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#00FF00",
-                "LegendIndex": 11,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Spleen.QWBA.1-dAb2-Spleen-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Spleen.QWBA.1|ObservedData|Spleen|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#00FF00",
-                "LegendIndex": 10,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Spleen",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Liver-Whole Organ incl. FcRn_Complex (Liver)-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Liver|dAb2|Whole Organ incl. FcRn_Complex (Liver)-dAb2",
-              "CurveOptions": {
-                "Color": "#C04000",
-                "LegendIndex": 5
-              }
-            },
-            {
-              "Name": "Sepp2015.Liver.QWBA.3-dAb2-Liver-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.3|ObservedData|Liver|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#C04000",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Liver.QWBA.2-dAb2-Liver-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.2|ObservedData|Liver|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#C04000",
-                "LegendIndex": 7,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Liver.QWBA.1-dAb2-Liver-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Liver.QWBA.1|ObservedData|Liver|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#C04000",
-                "LegendIndex": 6,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Liver",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Heart-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Heart|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#FF8080",
-                "LegendIndex": 14
-              }
-            },
-            {
-              "Name": "Sepp2015.Heart.QWBA.1-dAb2-Heart-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.1|ObservedData|Heart|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#FF8080",
-                "LegendIndex": 15,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Heart.QWBA.3-dAb2-Heart-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.3|ObservedData|Heart|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF8080",
-                "LegendIndex": 17,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Heart.QWBA.2-dAb2-Heart-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Heart.QWBA.2|ObservedData|Heart|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF8080",
-                "LegendIndex": 16,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Heart",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Bone-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Bone|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#0000C0",
-                "LegendIndex": 14
-              }
-            },
-            {
-              "Name": "Sepp2015.Bone.QWBA.3-dAb2-Bone-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.3|ObservedData|Bone|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#0000C0",
-                "LegendIndex": 17,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Bone.QWBA.2-dAb2-Bone-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.2|ObservedData|Bone|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#0000C0",
-                "LegendIndex": 16,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Bone.QWBA.1-dAb2-Bone-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Bone.QWBA.1|ObservedData|Bone|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#0000C0",
-                "LegendIndex": 15,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Bone",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Small Intestine-Whole Organ (Small Intestine) incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|SmallIntestine|dAb2|Whole Organ (Small Intestine) incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#804040",
-                "LegendIndex": 14
-              }
-            },
-            {
-              "Name": "dAb2-Large Intestine-Whole Organ (Large Intestine) incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|LargeIntestine|dAb2|Whole Organ (Large Intestine) incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#808080",
-                "LegendIndex": 15
-              }
-            },
-            {
-              "Name": "Sepp2015.Gut.QWBA.3-dAb2-Gut-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.3|ObservedData|GIT|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#804040",
-                "LegendIndex": 18,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Gut.QWBA.1-dAb2-Gut-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.1|ObservedData|GIT|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#804040",
-                "LegendIndex": 16,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Gut.QWBA.2-dAb2-Gut-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.GIT.QWBA.2|ObservedData|GIT|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#804040",
-                "LegendIndex": 17,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Intestine",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        },
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.01,
-              "Max": 3.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Brain-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim|Organism|Brain|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#008000",
-                "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "Sepp2015.Brain.QWBA.3-dAb2-Brain-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.3|ObservedData|Brain|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#008000",
-                "LegendIndex": 4,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Brain.QWBA.2-dAb2-Brain-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.2|ObservedData|Brain|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#008000",
-                "LegendIndex": 3,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Brain.QWBA.1-dAb2-Brain-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Brain.QWBA.1|ObservedData|Brain|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#008000",
-                "LegendIndex": 2,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Brain",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim\n2023-03-14 12:14"
-        }
-      ]
+      "HasResults": false
     },
     {
       "Name": "dAb2_Sim_Kidney",
@@ -1818,7 +640,8 @@
             {
               "Name": "Start time",
               "Value": 0.0,
-              "Unit": "h"
+              "Unit": "h",
+              "ValueOrigin": {}
             },
             {
               "Name": "End time",
@@ -1831,16 +654,18 @@
             {
               "Name": "Resolution",
               "Value": 20.0,
-              "Unit": "pts/h"
+              "Unit": "pts/h",
+              "ValueOrigin": {}
             }
           ]
         }
       ],
       "Parameters": [
         {
-          "Path": "Applications|10mgkg|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|10mgkg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 0.0016666666667,
-          "Unit": "min"
+          "Unit": "min",
+          "ValueOrigin": {}
         }
       ],
       "OutputSelections": [
@@ -1893,100 +718,7 @@
           }
         }
       ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "dAb2-Kidney-Whole Organ incl. FcRn_Complex-dAb2-Concentration",
-              "X": "Time",
-              "Y": "dAb2_Sim_Kidney|Organism|Kidney|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
-              "CurveOptions": {
-                "Color": "#FF8000",
-                "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "Sepp2015.Kidney.QWBA.3-dAb2-Kidney-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.3|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.3|ObservedData|Kidney|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF8000",
-                "LegendIndex": 4,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Kidney.QWBA.2-dAb2-Kidney-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.2|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.2|ObservedData|Kidney|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "VisibleInLegend": false,
-                "Color": "#FF8000",
-                "LegendIndex": 3,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Sepp2015.Kidney.QWBA.1-dAb2-Kidney-Tissue-Measurement",
-              "X": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.1|Time",
-              "Y": "Sepp2015_PBPK_dAb_PKSimImport.PKData.Kidney.QWBA.1|ObservedData|Kidney|Tissue|dAb2|Measurement",
-              "CurveOptions": {
-                "Color": "#FF8000",
-                "LegendIndex": 2,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Kidney - log scale",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "dAb2\ndAb2_Sim_Kidney\n2023-03-14 12:14"
-        }
-      ]
+      "HasResults": false
     }
   ],
   "ObservedData": [
@@ -1995,31 +727,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Skin"
+          "Value": "Skin",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2034,11 +773,11 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            3.13174772,
+            3.1317477,
             0.9999093,
             5.973852,
-            2.24153185,
-            1.31874537
+            2.2415318,
+            1.3187454
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2055,11 +794,11 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2070,31 +809,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Skin"
+          "Value": "Skin",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2111,10 +857,10 @@
           "Values": [
             3.680474,
             2.043987,
-            6.55120468,
-            2.37457919,
-            3.16807318,
-            1.66084015
+            6.5512047,
+            2.3745792,
+            3.1680732,
+            1.6608402
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2131,12 +877,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2147,31 +893,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Skin"
+          "Value": "Skin",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2190,8 +943,8 @@
             2.790638,
             7.101984,
             4.477606,
-            5.08320427,
-            3.13174772
+            5.0832043,
+            3.1317477
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2208,12 +961,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2224,31 +977,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Kidney"
+          "Value": "Kidney",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2282,9 +1042,9 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
+          0.083333336,
           1.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2295,31 +1055,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Kidney"
+          "Value": "Kidney",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2335,11 +1102,11 @@
           },
           "Values": [
             118.316925,
-            51.1274643,
+            51.127464,
             155.9004,
-            110.432487,
-            64.3409958,
-            19.4694214
+            110.43249,
+            64.340996,
+            19.469421
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2356,12 +1123,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2372,31 +1139,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Kidney"
+          "Value": "Kidney",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2411,12 +1185,12 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            131.211548,
+            131.21155,
             77.3312,
-            183.117889,
+            183.11789,
             159.5257,
-            73.0123444,
-            29.7882786
+            73.012344,
+            29.788279
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2433,12 +1207,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2449,31 +1223,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Liver"
+          "Value": "Liver",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2490,7 +1271,7 @@
           "Values": [
             9.347082,
             4.495679,
-            1.97323811,
+            1.9732381,
             0.8086531,
             0.3715471
           ],
@@ -2509,11 +1290,11 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2524,31 +1305,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Liver"
+          "Value": "Liver",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2564,9 +1352,9 @@
           },
           "Values": [
             17.73462,
-            5.21632862,
-            2.23776865,
-            1.66217279,
+            5.2163286,
+            2.2377687,
+            1.6621728,
             1.0049237,
             0.4888991
           ],
@@ -2585,12 +1373,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2601,31 +1389,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Liver"
+          "Value": "Liver",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2640,12 +1435,12 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            18.7783012,
+            18.778301,
             9.673347,
-            2.48037386,
-            1.84237552,
+            2.4803739,
+            1.8423755,
             1.192989,
-            0.511784136
+            0.51178414
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2662,12 +1457,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2678,31 +1473,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Lung"
+          "Value": "Lung",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2718,8 +1520,8 @@
           },
           "Values": [
             25.3984,
-            10.9223022,
-            6.74357557
+            10.922302,
+            6.7435756
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2736,8 +1538,8 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5
         ],
         "Dimension": "Time",
@@ -2749,31 +1551,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Lung"
+          "Value": "Lung",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2788,11 +1597,11 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            39.2001724,
-            17.4784412,
+            39.200172,
+            17.478441,
             9.918121,
             3.602789,
-            1.21740377
+            1.2174038
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2809,11 +1618,11 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2824,31 +1633,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Lung"
+          "Value": "Lung",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2864,11 +1680,11 @@
           },
           "Values": [
             52.35312,
-            26.6531639,
-            11.0547733,
+            26.653164,
+            11.054773,
             9.115495,
-            5.17257643,
-            1.83419347
+            5.1725764,
+            1.8341935
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -2885,12 +1701,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2901,31 +1717,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -2940,11 +1763,11 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            22.5187035,
-            11.5279408,
-            3.81896377,
-            2.79410625,
-            1.44643152,
+            22.518703,
+            11.527941,
+            3.8189638,
+            2.7941062,
+            1.4464315,
             0.7829588
           ],
           "Dimension": "Concentration (mass)",
@@ -2962,12 +1785,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -2978,31 +1801,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3021,7 +1851,7 @@
             14.735857,
             6.102389,
             3.531994,
-            1.99915826,
+            1.9991583,
             0.9360162
           ],
           "Dimension": "Concentration (mass)",
@@ -3039,12 +1869,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3055,31 +1885,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3094,12 +1931,12 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            48.0958061,
-            24.8978672,
+            48.095806,
+            24.897867,
             6.380957,
-            4.66856241,
+            4.6685624,
             2.2856276,
-            1.15709043
+            1.1570904
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -3116,12 +1953,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3132,31 +1969,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Bone"
+          "Value": "Bone",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3171,11 +2015,11 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            10.4051962,
-            6.53853273,
-            2.39928675,
-            1.25506508,
-            0.560045958
+            10.405196,
+            6.5385327,
+            2.3992867,
+            1.2550651,
+            0.56004596
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -3192,11 +2036,11 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3207,31 +2051,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Bone"
+          "Value": "Bone",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3246,12 +2097,12 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            18.4845028,
-            7.66490841,
-            2.71131182,
-            3.10160565,
-            1.94902194,
-            0.970871747
+            18.484503,
+            7.6649084,
+            2.7113118,
+            3.1016057,
+            1.9490219,
+            0.97087175
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -3268,12 +2119,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3284,31 +2135,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Bone"
+          "Value": "Bone",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3324,10 +2182,10 @@
           },
           "Values": [
             20.63457,
-            14.1251678,
-            3.10160565,
-            3.37873983,
-            2.61366749,
+            14.125168,
+            3.1016057,
+            3.3787398,
+            2.6136675,
             0.9949042
           ],
           "Dimension": "Concentration (mass)",
@@ -3345,12 +2203,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3361,31 +2219,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Muscle"
+          "Value": "Muscle",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3402,7 +2267,7 @@
           "Values": [
             2.3473525,
             1.381002,
-            2.06769514
+            2.0676951
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -3419,8 +2284,8 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5
         ],
         "Dimension": "Time",
@@ -3432,31 +2297,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Muscle"
+          "Value": "Muscle",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3473,10 +2345,10 @@
           "Values": [
             2.85575,
             2.091678,
-            2.82300663,
-            1.58596826,
+            2.8230066,
+            1.5859683,
             0.5748572,
-            0.294493556
+            0.29449356
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -3493,12 +2365,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3509,31 +2381,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Muscle"
+          "Value": "Muscle",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3549,10 +2428,10 @@
           },
           "Values": [
             4.082997,
-            2.88887358,
-            3.31763482,
-            1.75942051,
-            0.841076255,
+            2.8888736,
+            3.3176348,
+            1.7594205,
+            0.84107625,
             0.3883973
           ],
           "Dimension": "Concentration (mass)",
@@ -3570,12 +2449,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3586,31 +2465,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "GIT"
+          "Value": "GIT",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3625,10 +2511,10 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            5.31452274,
-            2.07873273,
-            2.46019435,
-            1.36418056,
+            5.3145227,
+            2.0787327,
+            2.4601943,
+            1.3641806,
             0.7473909
           ],
           "Dimension": "Concentration (mass)",
@@ -3646,11 +2532,11 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.166666672,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3661,31 +2547,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "GIT"
+          "Value": "GIT",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3700,11 +2593,11 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            10.1787443,
+            10.178744,
             8.395961,
-            2.58151913,
+            2.5815191,
             2.5506382,
-            1.71464825,
+            1.7146482,
             0.8635063
           ],
           "Dimension": "Concentration (mass)",
@@ -3722,12 +2615,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3738,31 +2631,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "GIT"
+          "Value": "GIT",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3779,10 +2679,10 @@
           "Values": [
             11.902504,
             9.817814,
-            3.61590266,
-            3.36401439,
-            1.88793421,
-            1.00974059
+            3.6159027,
+            3.3640144,
+            1.8879342,
+            1.0097406
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -3799,12 +2699,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3815,31 +2715,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Brain"
+          "Value": "Brain",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3871,7 +2778,7 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358
+          0.083333336
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3882,31 +2789,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Brain"
+          "Value": "Brain",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3939,8 +2853,8 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672
+          0.083333336,
+          0.16666667
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -3951,31 +2865,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Brain"
+          "Value": "Brain",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -3991,7 +2912,7 @@
           },
           "Values": [
             0.6599954,
-            0.384015977
+            0.38401598
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -4008,8 +2929,8 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672
+          0.083333336,
+          0.16666667
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -4020,31 +2941,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "LSC"
+          "Value": "LSC",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "6"
+          "Value": 6.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4059,7 +2987,7 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            0.957141757
+            0.95714176
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -4076,7 +3004,7 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          2.66666675
+          2.6666667
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -4087,31 +3015,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "LSC"
+          "Value": "LSC",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "5"
+          "Value": 5.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4128,9 +3063,9 @@
           "Values": [
             65.0075,
             9.971189,
-            1.99915826,
-            0.978744745,
-            0.313562185
+            1.9991583,
+            0.97874475,
+            0.31356218
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -4147,10 +3082,10 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0333333351,
-          0.166666672,
+          0.033333335,
+          0.16666667,
           1.5,
-          2.66666675,
+          2.6666667,
           4.0
         ],
         "Dimension": "Time",
@@ -4162,31 +3097,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "LSC"
+          "Value": "LSC",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "4"
+          "Value": 4.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4202,14 +3144,14 @@
           },
           "Values": [
             66.47473,
-            26.6220379,
-            13.0335779,
-            4.51485348,
-            2.44390655,
-            2.13759923,
-            1.18320608,
-            1.54659641,
-            0.626337349,
+            26.622038,
+            13.033578,
+            4.5148535,
+            2.4439065,
+            2.1375992,
+            1.1832061,
+            1.5465964,
+            0.62633735,
             0.4382474
           ],
           "Dimension": "Concentration (mass)",
@@ -4227,15 +3169,15 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0333333351,
-          0.0833333358,
-          0.166666672,
+          0.033333335,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           1.5,
           2.0,
-          2.66666675,
-          3.33333325,
+          2.6666667,
+          3.3333333,
           4.0
         ],
         "Dimension": "Time",
@@ -4247,31 +3189,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "LSC"
+          "Value": "LSC",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4288,12 +3237,12 @@
           "Values": [
             77.71554,
             28.14971,
-            18.0141125,
+            18.014112,
             4.99186,
-            3.19448614,
-            2.47133231,
-            1.76821589,
-            1.65369773,
+            3.1944861,
+            2.4713323,
+            1.7682159,
+            1.6536977,
             0.6697112,
             0.47385478
           ],
@@ -4312,15 +3261,15 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0333333351,
-          0.0833333358,
-          0.166666672,
+          0.033333335,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           1.5,
           2.0,
-          2.66666675,
-          3.33333325,
+          2.6666667,
+          3.3333333,
           4.0
         ],
         "Dimension": "Time",
@@ -4332,31 +3281,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "LSC"
+          "Value": "LSC",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4371,15 +3327,15 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            82.1751556,
-            39.3431969,
-            22.5187035,
+            82.175156,
+            39.343197,
+            22.518703,
             5.104525,
-            3.94898224,
-            2.95444179,
-            1.86968279,
-            2.09041858,
-            1.19648409,
+            3.9489822,
+            2.9544418,
+            1.8696828,
+            2.0904186,
+            1.1964841,
             0.4899872
           ],
           "Dimension": "Concentration (mass)",
@@ -4397,15 +3353,15 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0333333351,
-          0.0833333358,
-          0.166666672,
+          0.033333335,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           1.5,
           2.0,
-          2.66666675,
-          3.33333325,
+          2.6666667,
+          3.3333333,
           4.0
         ],
         "Dimension": "Time",
@@ -4417,31 +3373,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Blood"
+          "Value": "Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "WholeBlood"
+          "Value": "WholeBlood",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "LSC"
+          "Value": "LSC",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4457,14 +3420,14 @@
           },
           "Values": [
             87.86577,
-            50.8557358,
+            50.855736,
             23.546669,
-            5.45801163,
-            5.16180849,
-            3.61171222,
-            2.55546951,
-            3.19448614,
-            1.32289565,
+            5.4580116,
+            5.1618085,
+            3.6117122,
+            2.5554695,
+            3.1944861,
+            1.3228956,
             0.5123549
           ],
           "Dimension": "Concentration (mass)",
@@ -4482,15 +3445,15 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0333333351,
-          0.0833333358,
-          0.166666672,
+          0.033333335,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           1.5,
           2.0,
-          2.66666675,
-          3.33333325,
+          2.6666667,
+          3.3333333,
           4.0
         ],
         "Dimension": "Time",
@@ -4502,31 +3465,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Spleen"
+          "Value": "Spleen",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4544,8 +3514,8 @@
             4.869999,
             2.362614,
             1.6063993,
-            1.16009164,
-            0.590607047
+            1.1600916,
+            0.59060705
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -4562,11 +3532,11 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -4577,31 +3547,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Spleen"
+          "Value": "Spleen",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4616,11 +3593,11 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            9.22604752,
-            3.96756244,
-            2.09428978,
-            2.39126873,
-            1.70620632,
+            9.2260475,
+            3.9675624,
+            2.0942898,
+            2.3912687,
+            1.7062063,
             0.6582924
           ],
           "Dimension": "Concentration (mass)",
@@ -4638,12 +3615,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -4654,31 +3631,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Spleen"
+          "Value": "Spleen",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4694,11 +3678,11 @@
           },
           "Values": [
             9.451201,
-            5.69628429,
-            2.14539814,
+            5.6962843,
+            2.1453981,
             2.8652494,
-            1.85643911,
-            0.798341334
+            1.8564391,
+            0.79834133
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -4715,12 +3699,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
@@ -4731,31 +3715,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Heart"
+          "Value": "Heart",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "3"
+          "Value": 3.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4770,7 +3761,7 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            6.01062727,
+            6.0106273,
             3.947399,
             0.968002,
             0.584448
@@ -4790,8 +3781,8 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           1.0,
           2.0
         ],
@@ -4804,31 +3795,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Heart"
+          "Value": "Heart",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "2"
+          "Value": 2.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4843,11 +3841,11 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            13.4426508,
-            4.78397942,
-            1.78633618,
-            1.47395742,
-            0.770452261
+            13.442651,
+            4.7839794,
+            1.7863362,
+            1.4739574,
+            0.77045226
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -4864,8 +3862,8 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0
@@ -4879,31 +3877,38 @@
       "ExtendedProperties": [
         {
           "Name": "Sheet",
-          "Value": "PKData"
+          "Value": "PKData",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Heart"
+          "Value": "Heart",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Tissue"
+          "Value": "Tissue",
+          "Type": "String"
         },
         {
           "Name": "Molecule",
-          "Value": "dAb2"
+          "Value": "dAb2",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Mouse"
+          "Value": "Mouse",
+          "Type": "String"
         },
         {
           "Name": "Experiment",
-          "Value": "QWBA"
+          "Value": "QWBA",
+          "Type": "String"
         },
         {
           "Name": "DataPoint",
-          "Value": "1"
+          "Value": 1.0,
+          "Type": "Double"
         }
       ],
       "Columns": [
@@ -4918,12 +3923,12 @@
             "MolWeight": 25600.0
           },
           "Values": [
-            14.4473848,
+            14.447385,
             7.551794,
-            2.21756458,
-            1.52804852,
-            0.848174036,
-            0.417502254
+            2.2175646,
+            1.5280485,
+            0.84817404,
+            0.41750225
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -4940,12 +3945,12 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.0833333358,
-          0.166666672,
+          0.083333336,
+          0.16666667,
           0.5,
           1.0,
           2.0,
-          3.33333325
+          3.3333333
         ],
         "Dimension": "Time",
         "Unit": "h"
