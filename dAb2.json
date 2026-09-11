@@ -1,6 +1,7 @@
 {
   "Name": "dAb2",
   "Version": 81,
+  "ApplicationName": "PK-Sim",
   "Individuals": [
     {
       "Name": "Mouse",
@@ -5223,6 +5224,5 @@
         "Unit": "h"
       }
     }
-  ],
-  "ApplicationName": "PK-Sim"
+  ]
 }
