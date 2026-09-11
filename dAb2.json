@@ -416,14 +416,6 @@
           ]
         }
       ],
-      "Parameters": [
-        {
-          "Path": "Events|10mgkg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 0.0016666666667,
-          "Unit": "min",
-          "ValueOrigin": {}
-        }
-      ],
       "OutputSelections": [
         "Organism|VenousBlood|dAb2|Whole Blood",
         "Organism|Lung|dAb2|Whole Organ incl. FcRn_Complex-dAb2",
@@ -1833,14 +1825,6 @@
               "ValueOrigin": {}
             }
           ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Events|10mgkg|No formulation|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 0.0016666666667,
-          "Unit": "min",
-          "ValueOrigin": {}
         }
       ],
       "OutputSelections": [
